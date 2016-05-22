@@ -1,0 +1,121 @@
+body {
+	background-color: #ff8700;
+	margin: 0;
+}
+
+label {
+	visibility: hidden;
+}
+
+input {
+	outline: none;
+	background-color: #ff8700;
+	-webkit-appearance: none;
+	border: 0;
+	text-align: center; /* Need to actually center input in its <div> */
+	font-size: 100px;
+	font-family: "Kelly Slab", "Courier New", monospace;
+	color: inherit;
+}
+
+select {
+	position: relative;
+	left: 37%;
+	margin-top: 30px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 4px solid black;
+	padding: 10px 40px 10px 10px;
+	font-family: "Kelly Slab", "Courier New", monospace;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.select_menu:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 8px solid black;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	position: relative;
+	left: 373px;
+	top: 13px;
+	pointer-events: none;
+}
+
+input::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	height: 150px;
+	width: 150px;
+	background: url("images/red_x3.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+} /* Replace default "x" for inputs of type "search" */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: black;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: black;
+	opacity: 1;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4-18 */
+	color: black;
+	opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: black;
+}
+
+.container {
+	position: absolute;
+	padding-left: 13%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	/* Somehow this centers a <div> */
+	margin: 0 auto;
+}
+
+#button {
+	border: 4px solid black;
+	cursor: pointer;
+	position: relative;
+	left: 32.5%;
+	font-size: 60px;
+	margin-top: 50px;
+	padding: 0 20px;
+}
+
+#button:hover {
+	background: #804400;
+}
+
+#button:active {
+	border-color: #ffff00;
+	color: #ffff00;
+}
+
+@media screen and (min--moz-device-pixel-ratio:0) {
+	.container {
+		left: 43%;
+	}
+
+	.select_menu:after {
+		left: 470px;
+	}
+
+	select {
+		left: 43.5%;
+	}
+
+	#button {
+		left: 39.4%;
+	}
+} /* Keep things from looking like hot garbage in Firefox ... I have no idea if
+     I'm doing something terrible, but it works! */

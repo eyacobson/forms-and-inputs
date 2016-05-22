@@ -99,7 +99,7 @@ input:required:valid {
 }
 
 @media all and (max-width: 825px) and (min-width: 600px) {
-	input[placeholder] {
+	input[placeholder] { /* Matches INPUTS with placeholder, not placeholder */
 		font-size: 30px;
 	}
 } /* Need to shrink placeholder text as input shrinks w/ screen size */
