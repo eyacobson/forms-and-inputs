@@ -1,0 +1,78 @@
+html, body {
+	min-height: 100%;
+	font-family: "Homemade Apple", sans-serif;
+}
+
+.container {
+	height: 600px;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url("images/travel - La Syrie et le Liban.jpg");
+	-webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.51);
+	-moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.51);
+	box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.51);
+	overflow: hidden;
+}
+
+h1 {
+	display: block;
+	position: relative;
+	top: 40px;
+	left: 82px;
+	font-size: 50px;
+}
+
+form {
+	margin-top: 30px;
+}
+
+input {
+	display: block;
+	position: relative;
+	margin-top: -10px;
+	margin-left: 72px;
+	margin-top: -30px;
+	margin-bottom: 20px;
+	border: 0;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	font-size: 25px;
+	background: transparent; /* Hides <input> elements' default white boxes */
+	border-bottom: 2px solid black;
+	outline: none; /* Removes on-focus border from <input> elements */
+	font-family: "Courier New", sans-serif;
+	width: 75%;
+}
+
+label {
+	display: block;
+	position: relative;
+	font-size: 30px;
+	margin-bottom: 20px;
+	padding-left: 72px;
+	max-width: 100%;
+}
+
+input[type=submit] {
+	background: none;
+	outline: none;
+	top: 18px;
+	left: -1px;
+	font-family: "Emblema One", "Courier New", sans-serif;
+	font-size: 30px;
+	color: #800000;
+	border: 3px solid #800000;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input[type=submit]:active {
+	color: #4d0000;
+	border-color: #4d0000;
+}
