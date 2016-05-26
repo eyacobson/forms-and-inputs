@@ -1,0 +1,186 @@
+html, body {
+	min-width: 100%;
+}
+
+body {
+	background-color: #05beec;
+}
+
+form {
+	height: 500px;
+	width: 50%; /* Responsive width */
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+label {
+	margin: 0 auto;
+	font-family: "Contrail-One", "Courier New", sans-serif;
+	font-size: 80px;
+	color: red;
+	text-align: center;
+	display: block;
+	position: relative;
+	top: -400px;
+	visibility: hidden;
+}
+
+textarea {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: 200px;
+	outline: none;
+	border: none;
+	overflow: auto;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	resize: none;
+	position: relative;
+	top: -130px;
+}
+
+
+/* WebKit layout engine -- i.e. Chrome, Safari, & Opera */
+input[type=range] {
+	-webkit-appearance: none;
+	display: block;
+	width: 80%;
+	margin: 40px auto;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	height: 45px;
+	background: #025064;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background: #69dffc;
+	height: 70px;
+	width: 70px;
+	position: relative;
+	margin-top: -15px;
+	margin-left: -1px;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]#alpha:active + label {
+	visibility: visible;
+}
+
+input[type=range]#red:focus::-webkit-slider-runnable-track {
+	background: #ff4d4d;
+}
+
+input[type=range]#green:focus::-webkit-slider-runnable-track {
+	background: #33ff33;
+}
+
+input[type=range]#blue:focus::-webkit-slider-runnable-track {
+	background: #0000ff;
+}
+
+input[type=range]#alpha:focus::-webkit-slider-runnable-track {
+	background: #ccc;
+}
+
+input[type=range]#alpha:focus::-webkit-slider-runnable-track label {
+	opacity: 0;
+}
+
+
+/* Firefox */
+input[type=range]::-moz-range-track {
+	height: 45px;
+	background: #025064;
+}
+
+@-moz-document url-prefix() { /* Special-snowflake Firefox margins */
+	input[type=range] {
+		margin: 60px auto;
+	}
+
+	textarea {
+		position: relative;
+		top: -150px;
+	}
+}
+
+input[type=range]::-moz-range-thumb {
+	height: 70px;
+	width: 70px;
+	background: #69dffc;
+}
+
+input[type=range]#red:focus::-moz-range-track {
+	background: #ff4d4d;
+}
+
+input[type=range]#green:focus::-moz-range-track {
+	background: #33ff33;
+}
+
+input[type=range]#blue:focus::-moz-range-track {
+	background: #0000ff;
+}
+
+input[type=range]#alpha:focus::-moz-range-track {
+	background: #ccc;
+}
+
+
+/* Internet Explorer (NOTE: IE below v. 10 doesn't even support range inputs) */
+input[type=range]::-ms-track {
+	height: 45px;
+	background: transparent;
+	border-color: transparent;
+	border-width: 8px 0;
+	color: transparent; /* Remove gross-looking default IE tick-marks */
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	input[type=range] {
+		margin: 0 auto;
+	}
+
+	textarea {
+		position: relative;
+		top: -275px;
+	}
+} /* Special-snowflake IE10 & IE11 margins */
+
+input[type=range]#red::-ms-fill-lower {
+	background: #ff4d4d;
+}
+
+input[type=range]#green::-ms-fill-lower {
+	background: #33ff33;
+}
+
+input[type=range]#blue::-ms-fill-lower {
+	background: #0000ff;
+}
+
+input[type=range]#alpha::-ms-fill-lower {
+	background: #ccc;
+}
+
+input[type=range]::-ms-fill-upper {
+	background: #85adad;
+}
+
+input[type=range]::-ms-thumb {
+	border: none;
+	height: 70px;
+	width: 70px;
+	background: #69dffc;
+}
