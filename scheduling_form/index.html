@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="cleartype" content="on"/>
+
+		<title>Scheduling Form</title>
+
+		<link rel="stylesheet" type="text/css" href="scheduling_styles.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baumans">
+	</head>
+
+	<body>
+		<div class="container">
+			<form>
+				<fieldset>
+					<legend><span>1</span> Appointment Time</legend>
+
+					<div class="inputcontainer">
+						<label for="date">Date</label>
+						<input type="date" name="date" placeholder="MM/DD/YYYY" pattern="((0[1-9]|1[012])[-/](0[1-9]|[12][0-9]|3[01])[-/](19|20)[0-9]{2})">
+					</div>
+
+					<div class="inputcontainer">
+						<label for="time">Time</label>
+						<input type="time" name="time" pattern="^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$" placeholder="HH:MM">
+					</div>
+
+					<label for="timezone">Time Zone</label>
+					<select name="timezone">
+						<option data-GMTAdjustment="GMT+02:00" data-UseDST="1" value="2">
+							(GMT+02:00) Cairo
+						</option>
+
+						<option data-GMTAdjustment="GMT+02:00" data-UseDST="1" value="2">
+							(GMT+02:00) Athens, Bucharest, Istanbul
+						</option>
+
+						<option data-GMTAdjustment="GMT+08:00" data-UseDST="0" value="8">
+							(GMT+08:00) Kuala Lumpur, Singapore
+						</option>
+
+						<option data-GMTAdjustment="GMT-05:00" data-UseDST="1" value="-5">
+							(GMT-05:00) Eastern Time (US &amp; Canada)
+						</option>
+
+						<option data-GMTAdjustment="GMT+10:00" data-UseDST="0"
+						value="10">
+							(GMT+10:00) Brisbane
+						</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend><span>2</span> Comments</legend>
+
+					<textarea name="message" placeholder="Your message"></textarea>
+				</fieldset>
+
+				<fieldset>
+					<legend><span>3</span> Contact Information</legend>
+
+					<div class="inputcontainer">
+						<label for="name">Name</label>
+						<input type="text" name="name">
+					</div>
+
+					<div class="inputcontainer">
+						<label for="phone">Phone Number</label>
+						<input type="tel" name="phone" placeholder="012-345-6789" pattern="^\d{3}[\-.]\d{3}[\-.]\d{4}$">
+					</div>
+
+					<label for="email">Email</label>
+					<input type="email" name="email" placeholder="you@somestuff.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$">
+				</fieldset>
+
+				<input type="submit" name="submit" value="Make Appointment">
+			</form>
+		</div>
+	</body>
+</html>

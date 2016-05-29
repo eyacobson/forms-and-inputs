@@ -1,0 +1,105 @@
+body {
+	font-family: "Nova Square", "Courier New", monospace;
+	background: #668cff;
+	color: #b3aca7;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	font-size: 2.6em;
+	letter-spacing: 4px;
+}
+
+form {
+	margin: 0 auto;
+	width: 500px;
+	overflow: hidden;
+}
+
+input {
+	font-size: 2em;
+	font-family: inherit;
+	padding: 0 15px 0 15px;
+	background: transparent;
+	outline: none;
+	border: 1px solid red;
+	border-top: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+input:invalid {
+	background-color: pink;
+}
+
+label {
+	color: white;
+	display: block;
+	pointer-events: none;
+	font-size: 2em;
+}
+
+.inputcontainer {
+	display: block;
+}
+
+#hidden {					/*Hide label, but still works w/ screen readers */
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+span {
+	display: block;
+}
+
+select {
+	font: inherit;
+	margin-top: 7px;
+}
+
+input::-webkit-input-placeholder {
+	color: white;
+}
+
+input:-moz-placeholder {
+	color: #0040ff;
+}
+
+input::-moz-placeholder {
+	color: #0040ff;
+}
+
+input:-ms-input-placeholder {
+	color: #0040ff;
+}
+
+input:focus {
+	border-width: 3px;
+}
+
+input[type=submit] {
+	letter-spacing: 5px;
+	padding: 6px 0 6px 0;
+	margin-top: 25px;
+	border: none;
+	background-color: #002db3;
+	cursor: pointer;
+	color: white;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+input[type=submit]:hover {
+	color: red;
+}
