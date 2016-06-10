@@ -7,7 +7,7 @@ html, body {
 .container {
 	width: 100%;
 	position: absolute;
-	top: 0;
+	top: 100px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -104,4 +104,12 @@ input[type=checkbox]:checked {
 
 select {
 	font: inherit;
+}
+
+img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
 }

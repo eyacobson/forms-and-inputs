@@ -76,3 +76,11 @@ input[type=submit]:active {
 	color: #4d0000;
 	border-color: #4d0000;
 }
+
+img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	float: left;
+}

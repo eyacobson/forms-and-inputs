@@ -4,7 +4,7 @@ html, body {
 }
 
 .container {
-	width: 100%;
+	width: 90%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -109,4 +109,12 @@ input[type=submit]:active {
 	position: relative;
 	top: -7px;
 	background: #ea7b00;
+}
+
+img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	float: left;
 }

@@ -119,3 +119,12 @@ input::-webkit-search-cancel-button {
 	}
 } /* Keep things from looking like hot garbage in Firefox ... I have no idea if
      I'm doing something terrible, but it works! */
+
+img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
