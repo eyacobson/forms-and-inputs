@@ -1,0 +1,30 @@
+1. 
+"novalidate" attribute on <form> element is needed on Chrome to get error bubbles to show up with custom message (set in .setCustomValidity() method).
+
+2.
+Also in Chrome, we need to use the .reportValidity() method to actually get the bubbles to show up.
+
+3.
+However, in Firefox (and IE), there is no .reportValidity() method. Bubbles' appearance is triggered by actually trying to submit the form. So, we need a polyfill that finds the "submit" button & clicks it.
+
+4.
+However, in doing #3, we need to make sure "novalidate" attribute is NOT on the form element! Or else, Firefox won't display bubbles. So, as part of the polyfill, we need to set the .noValidate property of the form element to false.
+
+5.
+We check validity as the user types based on the "input" event, which doesn't exist prior to IE9 & Safari 5. But, "input" is superior to "change", which doesn't get triggered until the element loses focus. It's also superior to "keyup", which isn't triggered if the user, say, pastes in some input or uses autofill. So those are pluses & minuses of this event to keep in mind. 
+
+6.
+If we want to get an input with a specific TYPE attribute, we can use
+.querySelector(), but NOT .getElementsByTagName().
+
+7.
+Firefox does not consider a date using a hyphen separator as a valid date object! It will only accept a slash separator.
+
+8.
+Firefox & IE (even the latest ones) do not support the date & time input types. The ideal thing is to use some kind of widget, but barring that (for learning purposes), the thing to do is use a text input with some kind of reg. exp. / custom validation.
+
+9.
+For something like "formNode.elements.time", the ".time" bit at the end is the NAME attribute of that form input element (not the ID!).
+
+10.
+Safari doesn't fully support the "pattern" attribute ... it won't display a message for failed matches & will still submit the form.

@@ -19,10 +19,10 @@
 		</a>
 		
 		<div class="container">
-			<form>
+			<form novalidate>
 				<label for="search">Search</label>
 				<span class="fa fa-search fa-4x"></span> <!-- Search icon -->
-				<input type="search" id="search" name="search" placeholder="Search Here">
+				<input type="search" id="search" name="search" placeholder="Search Here" required>
 
 				<div class="select_menu">
 					<select name="categories">
@@ -35,5 +35,8 @@
 				<input type="submit" id="button" name="submit" value="Search">
 			</form>
 		</div>
+
+		<script type="text/javascript" src="../validator.js"></script>
+		<script type="text/javascript" src="search-valid.js"></script>
 	</body>
 </html>

@@ -22,7 +22,7 @@
 			<p id="corp">Applied Dynamics Corporation</p>
 		</div>
 
-		<form action="#" method="post" name="info_harvest">
+		<form id="signup" action="#" method="post" name="info_harvest" novalidate>
 			<div class="inputs">	
 				<label for="first_name">First Name:</label> 
 				<input type="text" id="first_name" name="first_name" required>
@@ -32,7 +32,8 @@
 
 				<label for="email">Email:</label>
 				<span>Email format: officer_helpington@adcorp.net</span>
-				<input type="email" id="email" name="email" placeholder="officer_helpington@adcorp.net" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$" required>
+				<!--<input type="email" id="email" name="email" placeholder="you@adcorp.net" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$" required>-->
+				<input type="email" id="email" name="email" placeholder="you@adcorp.net">
 
 				<label for="dob">Date of Birth:</label> 
 				<input type="date" id="dob" name="dob" placeholder="MM/DD/YYYY" pattern="((0[1-9]|1[012])[-/](0[1-9]|[12][0-9]|3[01])[-/](19|20)[0-9]{2})" required> <!-- Some basic strictly-HTML validation -->
@@ -41,7 +42,10 @@
 				<input type="password" id="password" name="password" required>
 			</div>
 
-			<input type="submit" id="button" name="submit" value="Submit">
+			<input type="submit" id="button" name="btnSubmit" value="Submit">
 		</form>
+
+		<script type="text/javascript" src="../validator.js"></script>
+		<script type="text/javascript" src="signup-valid.js"></script>
 	</body>
 </html>

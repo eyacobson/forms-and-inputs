@@ -13,6 +13,14 @@ span {
 	display: block;
 }
 
+li span {
+	position: relative;
+	left: 31.5%;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	display: none;
+}
+
 .container {
 	display: block;
 	height: 450px;

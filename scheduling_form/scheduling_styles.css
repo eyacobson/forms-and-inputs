@@ -77,7 +77,7 @@ select {
 	font: inherit;
 }
 
-input:invalid {
+.invalid {
 	background-color: pink;
 }
 

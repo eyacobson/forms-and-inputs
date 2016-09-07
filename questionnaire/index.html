@@ -22,37 +22,41 @@
 
 			<ul>
 				<li>
-					<input type="radio" id="fish_choice1" name="fish_choice" value="Walleye">
-					<label for="fish_choice1">Walleye</label>
+					<input type="radio" id="fish_choice1" class="choice" name="fish_choice" value="Walleye">
+					<label for="fish_choice1" class="choice">Walleye</label>
 					<div class="circle"></div>
 				</li>
 
 				<li>
-					<input type="radio" id="fish_choice2" name="fish_choice" value="Muskellunge">
-					<label for="fish_choice2">Muskellunge</label>
+					<input type="radio" id="fish_choice2" class="choice" name="fish_choice" value="Muskellunge">
+					<label for="fish_choice2" class="choice">Muskellunge</label>
 					<div class="circle"></div>
 				</li>
 
 				<li>
-					<input type="radio" id="fish_choice3" name="fish_choice"
+					<input type="radio" id="fish_choice3" class="choice" name="fish_choice"
 					value="Silver lamprey">
-					<label for="fish_choice3">Silver lamprey</label>
+					<label for="fish_choice3" class="choice">Silver lamprey</label>
 					<div class="circle"></div>
 				</li>
 
 				<li>
-					<input type="radio" id="fish_choice4" name="fish_choice" value="Yellow perch">
-					<label for="fish_choice4">Yellow perch</label>
+					<input type="radio" id="fish_choice4" class="choice" name="fish_choice" value="Yellow perch">
+					<label for="fish_choice4" class="choice">Yellow perch</label>
 					<div class="circle"></div>
 				</li>
 
 				<li>
-					<input type="radio" id="fish_choice5" name="fish_choice" value="">
-					<label for="fish_choice5">Other</label>
+					<input type="radio" id="fish_choice5" class="choice" name="fish_choice" value="">
+					<label for="fish_choice5" class="choice">Other</label>
 					<div class="circle"></div>
 					<input type="text" name="other_choice">
+					<span id="error" aria-live="polite">Please supply a value.</span>
 				</li>
 			</ul>
 		</div>
+
+		<script type="text/javascript" src="../validator.js"></script>
+		<script type="text/javascript" src="fish-valid.js"></script>
 	</body>
 </html>

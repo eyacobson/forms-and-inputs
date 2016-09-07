@@ -64,6 +64,11 @@ input[type=text] {
 	font-size: 20px;
 	border-radius: 3px;
 	border: 1px solid #bbb;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-ms-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
 }
 
 input[type=text]:focus {
@@ -100,6 +105,17 @@ input[type=checkbox]:focus {
 
 input[type=checkbox]:checked {
 	background: red;
+}
+
+span {
+	color: red;
+	font-variant: small-caps;
+	font-size: 22px;
+	display: none;
+}
+
+.invalid {
+	background: pink;
 }
 
 select {

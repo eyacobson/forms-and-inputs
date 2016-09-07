@@ -33,10 +33,6 @@ input {
 	margin-bottom: 25px;
 }
 
-input:invalid {
-	background-color: pink;
-}
-
 label {
 	color: white;
 	display: block;
@@ -59,6 +55,11 @@ label {
 
 span {
 	display: block;
+}
+
+.inputcontainer span {
+	color: black;
+	display: none;
 }
 
 select {

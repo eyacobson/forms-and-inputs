@@ -48,6 +48,11 @@ input[type=text], input[type=password], input[type=email] {
 	outline: none; /* Removes on-focus border from <input> elements */
 	font-family: "Courier New", sans-serif;
 	width: 75%;
+	-webkit-transition: border .3s ease-in-out;
+	-moz-transition: border .3s ease-in-out;
+	-ms-transition: border .3s ease-in-out;
+	-o-transition: border .3s ease-in-out;
+	transition: border .3s ease-in-out;
 }
 
 label {

@@ -23,27 +23,27 @@
 					<legend>Shipping Address</legend>
 
 					<div class="inputcontainer">
-						<input type="text" id="first_name" name="first_name">
+						<input type="text" name="first_name">
 						<label for="first_name">First Name</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="last_name" name="last_name">
+						<input type="text" name="last_name">
 						<label for="last_name">Last Name</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="address" name="address">
+						<input type="text" name="address">
 						<label for="address">Address</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="address2" name="address2">
+						<input type="text" name="address2">
 						<label for="address2">Address Line 2</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="city" name="city">
+						<input type="text" name="city">
 						<label for="city">City</label>
 					</div>
 
@@ -57,7 +57,7 @@
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="country" name="country">
+						<input type="text" name="country">
 						<label for="country">Country</label>
 					</div>
 
@@ -67,33 +67,36 @@
 							This is also my billing address.
 						</label>
 					</div>
+					<span id="error1">
+						Please ensure any fields highlighted in pink are filled out and do not contain extra whitespace!
+					</span>
 				</fieldset>
 
 				<fieldset>
 					<legend>Billing Address</legend>
 
 					<div class="inputcontainer">
-						<input type="text" id="first_name" name="first_name">
+						<input type="text" name="first_name">
 						<label for="first_name">First Name</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="last_name" name="last_name">
+						<input type="text" name="last_name">
 						<label for="last_name">Last Name</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="address" name="address">
+						<input type="text" name="address">
 						<label for="address">Address</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="address2" name="address2">
+						<input type="text" name="address2">
 						<label for="address2">Address Line 2</label>
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="city" name="city">
+						<input type="text" name="city">
 						<label for="city">City</label>
 					</div>
 
@@ -107,11 +110,18 @@
 					</div>
 
 					<div class="inputcontainer">
-						<input type="text" id="country" name="country">
+						<input type="text" name="country">
 						<label for="country">Country</label>
-					</div>			
+					</div>
+
+					<span id="error2">
+						Please ensure any fields highlighted in pink are filled out and do not contain extra whitespace!
+					</span>			
 				</fieldset>
 			</form>
 		</div>
+
+		<script type="text/javascript" src="../validator.js"></script>
+		<script type="text/javascript" src="billing-valid.js"></script>
 	</body>
 </html>

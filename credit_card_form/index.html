@@ -21,16 +21,25 @@
 
 		<form>
 			<div class="inputcontainer">
+				<span id="error1">
+					Name should be at least 2 characters.
+				</span>
 				<input type="text" name="name" placeholder="Name">
 				<label id="hidden" for="name">Name</label>
 			</div>
 
 			<div class="inputcontainer">
-				<input type="text" name="ccnum" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" maxlength="19" placeholder="Card Number">
+				<span id="error2">
+					Credit card number is not valid. Please use a - separator or none at all.
+				</span>
+				<input type="text" name="ccnum" placeholder="Card Number">
 				<label id="hidden" for="ccnum">Card Number</label>
 			</div>
 
 			<div class="inputcontainer">
+				<span id="error3">
+					Please make sure your CSV number is 3 digits.
+				</span>
 				<input type="text" name="csv" maxlength="3" placeholder="CSV">
 				<label id="hidden" for="csv">CSV</label>
 			</div>
@@ -74,5 +83,8 @@
 
 			<input type="submit" name="submit" value="Submit">
 		</form>
+
+		<script type="text/javascript" src="../validator.js"></script>
+		<script type="text/javascript" src="creditcard-valid.js"></script>
 	</body>
 </html>

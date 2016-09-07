@@ -89,14 +89,18 @@ input:focus {
 	border: 1px solid rgba(81,203,238,1);
 }
 
-input:focus:required:invalid {
+/*input:focus:invalid {
 	background-color: pink;
 } /* Only applies invalid styling on focus. Otherwise, there's a quirk where
      browsers will put invalid styling on all required inputs immediately on
      load (if invalid styling exists) */
 
-input:required:valid {
+/*input:valid {
 	background-color: white;
+}*/
+
+.invalid {
+	background-color: pink;
 }
 
 @media all and (max-width: 825px) and (min-width: 600px) {
